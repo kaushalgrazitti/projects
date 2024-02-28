@@ -1,0 +1,197 @@
+*{
+    margin:0px;
+    font-family: 'League Spartan', sans-serif;
+    font-size:15px;
+    color:hsl(0, 0%, 100%);
+}
+body{
+    padding:17vw 4vw;
+    background-color: hsl(0, 0%, 100%);
+    position:relative;
+}
+.h1-10000{
+    color:hsl(300, 43%, 22%);
+    font-weight:700;
+    font-size:43px;
+    text-align:center;
+}
+.we-only-provide{
+    margin-top:25px;
+    text-align:center;
+    line-height:22px;
+    color:hsl(303, 10%, 53%);
+}
+.pos-abs{
+    position:absolute;
+}
+.mobile-top-img{
+    top:0px;
+    left:0px;
+}
+.mobile-bottom-img{
+    bottom:0px;
+    right:0px;
+}
+.desktop-top-img{
+    top:0px;
+    left:0px;
+    display:none;
+}
+.desktop-bottom-img{
+    bottom:0px;
+    right:0px;
+    display:none;
+}
+.rating-div{
+    margin-top:35px;   
+}
+.rating-div > div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:10px 0px;
+    padding:12px;
+    border-radius:10px;
+    background-color: hsl(300, 24%, 96%);
+}
+.five-stars{
+    display:flex;
+    gap:5px;
+}
+.five-stars + p{
+    padding-top:10px;
+    font-weight:700;
+    color:hsl(300, 43%, 22%);
+}
+.review-div{
+    margin-top:35px;
+}
+.review-div > div{
+    border-radius:10px;
+    padding:32px 31px;
+    margin-top:10px;
+    background-color: hsl(300, 43%, 22%);
+}
+.profile{
+    display:flex;
+}
+.profile + p{
+    padding-top:30px;
+    line-height:22px;
+}
+.profile-info{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.profile-img{
+    margin-right:20px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.profile-img img{
+    border-radius:40px;
+    width:40px;
+}
+.reviewer-name{
+    font-weight:500;
+    padding-bottom:3px;
+}
+.verified-buyer{
+    color:hsl(333, 80%, 67%);
+}
+
+@media screen and (min-width:850px){
+    .mobile-top-img{
+        display:none;
+    }
+    .mobile-bottom-img{
+        display:none;
+    }
+    .desktop-top-img{
+        display:inline;
+    }
+    .desktop-bottom-img{
+        display:inline;
+    }
+    body{
+        padding:10vw 13vw;
+    }
+    .div-heading-to-rating{
+        display:flex;
+        justify-content:space-between;
+    }
+    .h1-10000{
+        width:55%;
+        text-align:left;
+    }
+    .div-10000{
+        width:50%;
+    }
+    .we-only-provide{
+        width:65%;
+        text-align:left;
+        margin-top:10px;
+    }
+    .rating-div{
+        margin-top:0px;
+        width:50%;
+        display:flex;
+        flex-direction: column;
+    }
+    .rating-div > div{
+        flex-direction: row;
+        justify-content:left;
+        padding-left:30px;
+        width:70%;
+        margin:8px 0px;
+    }
+    .five-stars + p{
+        padding-top: 0px;
+        padding-left:30px;
+    }
+    .rated-5-stars-in-reviews{
+        align-self:flex-start;
+    }
+    .rated-5-stars-in-report-guru{
+        align-self:center;
+    }
+    .rated-5-stars-in-besttech{
+        align-self:flex-end;
+    }
+    .review-div{
+        margin-top:60px;
+        display: flex;
+        gap:30px;
+        height:auto;
+    }
+    .review-div > div{
+        width:26%;
+    }
+    #colton-smith-card{
+        height:280px;
+    }
+    #irene-roberts-card{
+        margin-top:28px;
+        height:280px;
+    }
+    #anne-wallace-card{
+        margin-top:46px;   
+        height:280px;    
+    }
+}
+@media screen and (min-width:1200px){
+    #colton-smith-card{
+        height:180px;
+    }
+    #irene-roberts-card{
+        margin-top:28px;
+        height:180px;
+    }
+    #anne-wallace-card{
+        margin-top:46px;   
+        height:180px;    
+    }
+}

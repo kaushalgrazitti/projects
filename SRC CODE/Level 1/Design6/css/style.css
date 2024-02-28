@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    font-family: 'Manrope', sans-serif;
+    font-size:13px;
+}
+
+:root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 76px 25px;
+    box-sizing: border-box;
+    background-color: var(--light-grayish-blue);
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0px 15px 22px 4px hsl(206.25deg 26.67% 88.24%);
+}
+.section-img{
+    background: url(../assets/images/drawers.jpg) no-repeat 0% 23% / 100%;
+    width:100%;
+    height:195px;
+}
+.section-shift-the{
+    background-color: #ffffff;
+    padding:34px;
+}
+.section-shift-the > h4{
+    font-size:1.2em;
+}
+.section-shift-the > p{
+    margin-top:13px;
+}
+.profile{
+    margin-top:34px;
+    display:flex;
+    justify-content: space-between;
+}
+.info{
+    display:flex;
+}
+.profile-img{
+    background:url("../assets/images/avatar-michelle.jpg") no-repeat center/100%;
+    width:36px;
+    border-radius:20px;
+}
+.michelle{
+    margin-left:15px;
+}
+.arrow{
+    background: url(../assets/images/icon-share.svg) no-repeat center/47%;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: hsl(210, 46%, 95%);
+}
+@media screen and (min-width:768px){
+    .container{
+        display:block;
+    }
+    .section-img{
+        float:left;
+        height: 220px;
+        width: 275px;
+    }
+    .section-shift-the{
+        float:left;
+        width: 292px;
+        height: 166px;
+        padding:27px;
+    }
+    .section-shift-the > p{
+        font-size:0.8em;
+    }
+    .profile{
+        margin-top:13px;
+    }
+    .michelle > h4 , .michelle > div{
+        font-size:0.8em;
+    }
+}

@@ -1,0 +1,146 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+*{
+    margin:0px;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color:var(--light-gray);
+}
+main{
+    width: 320px;
+    margin: 70px auto;
+    box-shadow:0px 0px 15px 15px rgb(220 228 240);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.firstSection{
+    background-color: white;
+    padding: 25px;
+}
+.upperSectionDiv{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.upperSectionText1{
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color:var(--cyan);
+}
+.upperSectionText2{
+    font-weight:600;
+    color:var(--bright-yellow);
+}
+.upperSectionText3{
+    font-size: 0.86em;
+    line-height: 1.9em;
+    color: var(--grayish-blue);
+}
+.secondSection{
+    display: flex;
+    flex-direction: column;
+}
+.secondSection > div{
+    padding:25px;
+}
+.lowerSectionLeftDiv{
+    background-color: var(--cyan);
+    color: white;
+}
+.lowerSectionLeftDiv > .line1{
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: white;
+}
+.lowerSectionLeftDiv > .line2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 15px;
+}
+.lowerSectionLeftDiv > .line2 > .leftText{
+    font-size: 2em;
+    font-weight: 700;
+}
+.lowerSectionLeftDiv > .line2 > .rightText{
+    color: rgb(200 205 211); 
+}
+.lowerSectionLeftDiv > .line3{
+    padding-top:3px;
+}
+.btn{
+    width: 100%;
+    padding: 15px 0px;
+    margin-top: 20px;
+    color: white;
+    background-color: var(--bright-yellow);
+    box-shadow: 0px 3px 6px -3px black;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.lowerSectionRightDiv{
+    background-color: hsl(179.48deg 47.15% 51.76%);
+    color: white;
+}
+.lowerSectionRightDiv > .line1{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.lowerSectionRightDiv > .line1 ~ div{
+    color: hsl(186.12deg 71.01% 86.47%);
+    font-size:0.9em;
+    line-height: 1.5em;
+}
+.lowerSectionRightDiv > .line2{
+    padding-top: 15px;
+}
+
+@media screen and (min-width:768px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    main{
+        width: 550px;
+        margin: 0px;
+    }
+    .firstSection{
+        padding: 30px;
+    }
+    .upperSectionDiv{
+        gap: 8px;
+    }
+    .upperSectionText2{
+        padding-top: 13px;
+    }
+    .upperSectionText3{
+        line-height: 1.5em;
+    }
+    .secondSection{
+        flex-direction: row;
+    }
+    .secondSection > div{
+        padding: 30px;
+    }
+    .lowerSectionLeftDiv, .lowerSectionRightDiv{
+        width: 50%;
+    }
+    .lowerSectionLeftDiv > .line3{
+        font-size: 0.9em;
+    }
+    .lowerSectionRightDiv > .line1 ~ div{
+        font-size: 0.8em;
+    }
+}

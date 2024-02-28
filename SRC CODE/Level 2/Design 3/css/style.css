@@ -1,0 +1,321 @@
+:root{
+    --comissioner:'Commissioner', sans-serif;
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 48%);
+    --light-gray: rgba(122, 122, 122, 0.5);
+    --very-light-gray: rgba(122, 122, 122, 0.2);
+}
+
+*{
+    margin:0px;
+    font-size: 17px;
+    font-family: var(--comissioner);
+    text-align: center;
+}
+h2{
+    font-size: 1.9em;
+}
+h3{
+    font-size:1.2em;
+}
+p{
+    font-size: 0.8em;
+    line-height: 1.8em;
+    color: var(--dark-gray);
+}
+.container{
+    background: url("../assets/images/image-hero-mobile.jpg") no-repeat 0% 0%/100%;
+    background-color: hsl(0deg 0% 98.04%);
+    box-shadow: inset 0px 150px 122px -122px var(--black);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:32px 7vw; 
+}
+header > :nth-child(1){
+    background: url("../assets/images/logo.svg") no-repeat center/100%;
+    height: 20px;
+    width: 128px;
+}
+header > :nth-child(2){
+    background: url("../assets/images/icon-hamburger.svg") no-repeat center/100%;
+    height:20px;
+    width:16px;
+}
+nav{
+    display: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    padding: 160px 25px 75px 24px;
+}
+main > section{
+    border: 1px solid hsl(0deg 0% 94.9%);
+    background-color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 517px;
+}
+.mastercraft-main > :nth-child(1){
+    background: url("../assets/images/logo-mastercraft.svg") no-repeat center/100%;
+    width:56px;
+    height:56px;
+    position: relative;
+    left: 50%;
+    translate: -50% -50%
+}
+.mastercraft-main > :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: -6px;
+    padding: 0px 26px 40px 26px;
+}
+.back-this-project{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.back-this-project > :nth-child(1){
+    padding: 19px 47px 18px 47px;
+    background-color: var(--moderate-cyan);
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.back-this-project > :nth-child(2){
+    display: flex;
+}
+.back-this-project > :nth-child(2) > :nth-child(1){
+    background: url("../assets/images/icon-bookmark.svg") no-repeat center/100%;
+    width: 56px;
+}
+.back-this-project > :nth-child(2) > :nth-child(2){
+    display: none;
+}
+.div-89914{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.div-89914 > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.div-89914 > div > :nth-child(2){
+    display: flex;
+}
+.div-89914 > div > :nth-child(2) > div{
+    height: 1px;
+    width: 80px;
+    background-color: var(--light-gray);
+}
+.main-89914{
+    padding: 30px 26px 40px 26px;
+    gap:25px;
+}
+.main-89914 > :nth-last-child(1){
+    position: relative;
+    width:100%;
+    border-radius: 10px;
+    height: 12px;
+    background-color: var(--very-light-gray);
+}
+.main-89914 > :nth-last-child(1)::after{
+    content:"";
+    position: absolute;
+    left:0px;
+    right:0px;
+    width:80%;
+    height:100%;
+    border-radius: 10px;
+    background-color: var(--moderate-cyan);
+}
+.about-this-project{
+    padding: 40px 26px 40px 26px;
+    gap:28px;
+}
+.about-this-project h3, .about-this-project h4, .about-this-project h5, .about-this-project p{
+    text-align:left;
+}
+.about-this-project h3{
+    font-size:1.1em;
+}
+.bamboo-stand{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.bamboo-stand div{
+    display: flex;
+}
+.bamboo-stand > div{
+    flex-direction: column;
+    padding:24px;
+    gap:22px;
+    border:1px solid var(--light-gray);
+    border-radius:10px;
+}
+.bamboo-stand > div > :nth-child(1){
+    flex-direction: column;
+    gap:7px;
+}
+.bamboo-stand h4,h5{
+    font-size: 0.8em;
+}
+.bamboo-stand > div > :nth-child(1) > :nth-child(2){
+    color:var(--moderate-cyan);
+    font-weight: 500;
+}
+.bamboo-stand p + div{
+    flex-direction: column;
+    gap:20px;
+}
+.bamboo-stand p + div > :nth-child(1){
+    align-items: center;
+    gap:8px;
+}
+.bamboo-stand p + div > :nth-child(2){
+    box-sizing: border-box;
+    width: 155px;
+    padding: 15px 33px 15px 34px;
+    background-color: var(--moderate-cyan);
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+.bamboo-stand > :nth-child(3){
+    opacity: 0.5;
+}
+.bamboo-stand > :nth-child(3) > p + div > :nth-child(2){
+    background-color: var(--dark-gray);
+}
+
+@media screen and (min-width:567px){
+    *{
+        text-align: left;
+    }
+    p{
+        font-size:0.7em;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+    h5{
+        font-size: 0.7em;
+    }
+    header{
+        padding:32px 11vw; 
+    }
+    header > :nth-child(1){
+        width:90px;
+        height:14px;
+    }
+    header > :nth-child(2){
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+    }
+    nav h4{
+        font-size: 0.6em;
+        color: white;
+        font-weight: 400;
+    }
+    main{
+        padding-top:140px;
+        gap:20px;
+    }
+    .mastercraft-main h3,p{
+        text-align: center;
+    }
+    .mastercraft-main > :nth-child(1){
+        width:40px;
+        height: 40px;
+    }
+    .mastercraft-main > :nth-child(2) > p{
+        margin-top:-10px;
+    }
+    .back-this-project > :nth-child(1){
+        font-size: 0.7em;
+        padding: 13px 30px 13px 30px;
+    }
+    .back-this-project > :nth-child(2) > :nth-child(1){
+        width:40px;
+        position: relative;
+        z-index: 2;
+    }
+    .back-this-project > :nth-child(2) > :nth-child(2){
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        width: 80px;
+        left:-14px;
+        padding-right: 20px;
+        font-size:0.7em;
+        font-weight: 900;
+        color: var(--dark-gray);
+        background-color: hsl(0deg 0% 95.69%);
+        border-radius: 0px 20px 20px 0px;
+    }
+    .div-89914{
+        flex-direction: row;
+        gap:35px;
+    }
+    .div-89914 > div{
+        flex-direction: row;
+        gap:27px;
+    }
+    .div-89914 > :nth-child(2){
+        gap:55px;
+    }
+    .div-89914 > div > :nth-child(2){
+        height:100%;
+    }
+    .div-89914 > div > :nth-child(2) > div{
+        height: 43px;
+        width: 1px;
+    }
+    .main-89914 > :nth-last-child(1){
+        height:9px;
+    }
+    .about-this-project h3{
+        font-size: 0.9em;
+    }
+    .bamboo-stand > div > :nth-child(1){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bamboo-stand p + div{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bamboo-stand p + div > :nth-child(2){
+        font-size:0.7em;
+        width: 120px;
+        padding: 12px 20px 12px 20px;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:878px){
+    .container{
+        background:url("../assets/images/image-hero-desktop.jpg") no-repeat 0% 0%/100%;
+        background-color: hsl(0deg 0% 98.04%);
+    }
+}

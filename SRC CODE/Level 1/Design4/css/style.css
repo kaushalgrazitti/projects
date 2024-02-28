@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:hsl(0, 36%, 70%);
+}
+.container{
+    background-image: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    padding-bottom:20px;
+}
+p{
+    font-size:15px;
+}
+.img-base-apparel{
+    margin:25px;
+    width:100px;
+}
+.img-girl-desktop{
+    display:none;
+}
+.bg-pattern-desktop{
+    display:none;
+}
+.img-girl-mobile{
+    width:100%;
+}
+.div-we-are-coming-soon{
+    text-align:center;
+}
+.headings{
+    text-transform:uppercase;
+    letter-spacing:10px;
+    font-size:22px;
+}
+.we-are{
+    font-weight:100;
+}
+.coming-soon{
+    color:black;
+}
+.div-we-are-coming-soon{
+    margin:55px 29px;
+}
+.hello-fellow{
+    margin-top:15px;
+    line-height: 21px;
+}
+.div-email{
+    display:flex;
+    height:auto;
+    border:2px solid hsl(353.33deg 39.13% 90.98%);
+    border-radius: 25px;
+    margin-top:30px;
+}
+.input-email{
+    border:none;
+    margin-left:20px;
+    width:85%;
+    height:40px;
+    background-color:rgba(0,0,0,0);
+    color:hsl(0, 93%, 68%);
+}
+.input-email::placeholder{
+    color:hsl(352.5deg 42.11% 92.55%);
+}
+.email-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-radius: 21px;
+    background-image: linear-gradient(hsl(359.14deg 83.33% 83.53%),hsl(359.29deg 70% 76.47%));
+}
+.email-arrow img{
+    width: 12px;
+    height: 20px;
+}
+.input-email:focus{
+    border:none;
+}
+
+@media screen and (min-width:800px){
+    *{
+        text-align:left;
+    }
+    .img-girl-mobile{
+        display:none;
+    }
+    .bg-pattern-desktop{
+        display:inline;
+        height:100%;
+        position:absolute;
+        top:0%;
+        left:0%;
+        z-index:-1;
+    }
+    .container{
+        display:grid;
+        grid-template-columns:repeat(9,1fr);
+        padding:0px;
+        background-image:none;
+    }
+    .div-content{
+        grid-column:1/6;
+    }
+    .img-girl-desktop{
+        display:inline;
+        grid-column:6/10;
+        width:100%;
+    }
+    .img-base-apparel{
+        margin:0px;
+    }
+    .div-content{
+        padding:5vw 13.5vw 0px 13.5vw;
+        position:relative;
+    }
+    .div-we-are-coming-soon{
+        margin:5vw 0px 0px 0px;
+    }
+}
+@media screen and (min-width:1200px){
+    .hello-fellow{
+        line-height:40px;
+        margin-top:5vw;
+    }
+}

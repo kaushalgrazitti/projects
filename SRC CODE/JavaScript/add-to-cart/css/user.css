@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+}
+h2{
+    font-size: 3em;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 75px;
+    background-color: #f5aeff;
+}
+select{
+    height: 40px;
+    width: 150px;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    gap:20px;
+    padding:20px;
+    justify-content: center;
+}
+main > div{
+    width:200px;
+}
+.back{
+    position: absolute;
+    left:20px;
+    top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: black;
+    padding:10px;
+    border-radius: 7px;
+}

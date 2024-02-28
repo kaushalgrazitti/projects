@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Admin Panel
+        </h2>
+        <form class="content">
+            <div>
+                <label for="category">Category</label>
+                <input id="category" type="text" required>
+            </div>
+            <div>
+                <label for="itemName">Item name</label>
+                <input id="itemName" type="text" required>
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input id="price" type="number" required>
+            </div>
+            <div>
+                <label for="imageURL">Image</label>
+                <input id="imageURL" type="file" required>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+        <div class="back">
+            Back
+        </div>
+    </div>
+    <script type="module" src="script/admin/admin.js">
+
+    </script>
+</body>
+</html>
