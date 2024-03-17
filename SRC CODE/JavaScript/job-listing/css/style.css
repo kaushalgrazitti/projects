@@ -1,0 +1,242 @@
+:root{
+    --league: "League Spartan", sans-serif;
+    --desaturated-dark-cyan: hsl(180, 29%, 50%);
+    --light-grayish-cyan-background: hsl(180, 52%, 96%);
+    --light-grayish-cyan-filter-tablets: hsl(180, 31%, 95%);
+    --dark-grayish-cyan: hsl(180, 8%, 52%);
+    --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+}
+*{
+    margin: 0px;
+    font-size: 15px;
+    font-family: var(--league);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.background{
+    height:156px;
+    background: var(--desaturated-dark-cyan) url("../assets/images/bg-header-mobile.svg") no-repeat center/100%;
+}
+.background > div{
+    height: 30px;
+    width: 80%;
+    background-color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+    padding:0px 25px 55px 25px;
+    background-color: rgb(240 250 251);
+    min-height: calc(100vh - 230px);
+}
+main > div{
+    box-shadow: 3px 13px 31px -20px var(--desaturated-dark-cyan);
+}
+.filterCollection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    border-radius: 5px;
+    padding: 14px 35px;
+    margin-top: -40px;
+    background-color: white;
+    visibility: hidden;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+}
+.filterCollection > :nth-child(1){
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+.filterCollection > :nth-child(2){
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--dark-grayish-cyan);
+    transition: color 0.3s linear 0s;
+}
+.filterCollection > :nth-child(2):hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--desaturated-dark-cyan);
+}
+.filterTag{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.filterTag > :nth-child(1){
+    color: var(--desaturated-dark-cyan);
+    background-color: var(--light-grayish-cyan-background);
+    padding: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.filterTag > :nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--desaturated-dark-cyan);
+    color: white;
+    width: 30px;
+    font-weight: 900;
+    transition: background-color 0.3s linear 0s;
+}
+.filterTag > :nth-child(2):hover{
+    cursor: pointer;
+    background-color: var(--very-dark-grayish-cyan);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    gap: 17px;
+    border-radius: 6px;
+    padding: 20px;
+    position: relative;
+    font-weight: 700;
+    background-color: white;
+}
+.image{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    translate: 0% -50%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 17px 0px;
+    border-bottom: 1px solid rgb(190 192 191);
+}
+.name{
+    display: flex;
+    align-items: center;
+    color: var(--desaturated-dark-cyan);
+}
+.name-new-featured{
+    display: flex;
+    gap: 20px;
+}
+.name-new-featured + p{
+    transition: color 0.2s linear 0s;
+}
+.name-new-featured + p:hover{
+    color:var(--desaturated-dark-cyan);
+    cursor: pointer;
+}
+.new-featured{
+    display: flex;
+    gap:8px;
+    color: white;
+    font-size: 0.9em;
+}
+.new{
+    padding: 6px 9px 4px 9px;
+    border-radius: 12px;
+    background-color: var(--desaturated-dark-cyan);
+}
+.featured{
+    padding: 6px 9px 4px 9px;
+    border-radius: 12px;
+    background-color: var(--very-dark-grayish-cyan);
+}
+ul{
+    display: flex;
+    gap:20px;
+    padding: 0px;
+    font-weight: 500;
+    color: var(--dark-grayish-cyan);
+}
+ul > :nth-child(1){
+    list-style-type: none;
+}
+.filter{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+}
+.filter > div{
+    padding: 8px;
+    background-color: var(--light-grayish-cyan-background);
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: var(--desaturated-dark-cyan);
+    transition: background-color 0.3s linear 0s,color 0.3s linear 0s;
+}
+.filter > div:hover{
+    background-color: var(--desaturated-dark-cyan);
+    color: var(--light-grayish-cyan-filter-tablets);
+    cursor: pointer;
+}
+
+@media screen and (min-width:1050px){
+    .background{
+        background: var(--desaturated-dark-cyan) url(../assets/images/bg-header-desktop.svg) no-repeat center / 100%;
+        height: 112px;
+    }
+    main{
+        padding: 0px 0px 75px 0px;
+        gap: 23px;
+        align-items: center;
+    }
+    .filterCollection{
+        width: 85vw;
+        max-width: 1000px;
+        margin-top: -43px;
+    }
+    .card{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85vw;
+        padding: 14px 35px;
+    }
+    .content{
+        border: none;
+    }
+    .image-content{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    .image{
+        width: 87px;
+        height: 87px;
+        position: static;
+        translate: 0%;
+    }
+    .name-new-featured + p{
+        font-size: 1.5em;
+    }
+    .name{
+        font-size: 1.2em;
+    }
+    ul{
+        gap: 15px;
+    }
+    ul > li{
+        font-size: 1.2em;
+        padding: 0px 15px;
+    }
+    ul > :nth-child(1){
+        padding: 0px 20px 0px 0px;
+    }
+    .filter{
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .background{
+        height: 155px;
+    }
+}

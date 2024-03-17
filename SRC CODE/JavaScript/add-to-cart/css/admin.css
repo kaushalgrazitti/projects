@@ -40,9 +40,9 @@ button{
     height: 100%;
 }
 .back{
-    position: absolute;
+    position: fixed;
     left:20px;
-    top:20px;
+    top:35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,4 +50,7 @@ button{
     background-color: black;
     padding:10px;
     border-radius: 7px;
+}
+.back:hover{
+    cursor: pointer;
 }

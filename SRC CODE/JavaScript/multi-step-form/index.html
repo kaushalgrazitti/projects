@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="steps">
+            <div class="first-step">
+                <div class="number number-active-state">1</div>
+                <div class="desktop-steps">
+                    <div>Step 1</div>
+                    <div>YOUR INFO</div>
+                </div>
+            </div>
+            <div class="second-step">
+                <div class="number">2</div>
+                <div class="desktop-steps">
+                    <div>Step 2</div>
+                    <div>SELECT PLANS</div>
+                </div>
+            </div>
+            <div class="third-step">
+                <div class="number">3</div>
+                <div class="desktop-steps">
+                    <div>Step 3</div>
+                    <div>ADD-ONS</div>
+                </div>
+            </div>
+            <div class="fourth-step">
+                <div class="number">4</div>
+                <div class="desktop-steps">
+                    <div>Step 4</div>
+                    <div>SUMMARY</div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <div class="content">
+                <section class="personal-info">
+                    <h1>
+                        Personal info
+                    </h1>
+                    <p>
+                        Please provide your name, email address, and phone number.
+                    </p>
+                    <form>
+                        <div>
+                            <div>
+                                <label for="person-name">Name</label>
+                            </div>
+                            <input id="person-name" type="text" placeholder="e.g. Stephen King" required>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="person-email">Email Address</label>
+                            </div>
+                            <input id="person-email" type="email" placeholder="e.g. stephenking@lorem.com" required>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="person-number">Phone Number</label>
+                            </div>
+                            <input id="person-number" type="number" placeholder="e.g. 1234567890" required>
+                        </div>
+                        <button id="info-submit-btn" type="submit" style="display:none;"></button>
+                    </form>
+                </section>
+                <section class="select-your-plan">
+                    <h1>
+                        Select your plan
+                    </h1>
+                    <p>
+                        You have the option of monthly or yearly billing.
+                    </p>
+                    <div class="modes">
+                        <div class="arcade" tabindex="0">
+                            <div class="icons">
+
+                            </div>
+                            <div class="details">
+                                <p>
+                                    Arcade
+                                </p>
+                                <p>
+                                    $9/mo
+                                </p>
+                                <p>
+                                    2 months free
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advanced" tabindex="0">
+                            <div class="icons">
+
+                            </div>
+                            <div class="details">
+                                <p>
+                                    Advanced
+                                </p>
+                                <p>
+                                    $12/mo
+                                </p>
+                                <p>
+                                    2 months free
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pro" tabindex="0">
+                            <div class="icons">
+
+                            </div>
+                            <div class="details">
+                                <p>
+                                    Pro
+                                </p>
+                                <p>
+                                    $15/mo
+                                </p>
+                                <p>
+                                    2 months free
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-period">
+                        <div>
+                            Monthly
+                        </div>
+                        <div class="toggle-switch">
+                            <div>
+
+                            </div>
+                        </div>
+                        <div>
+                            Yearly
+                        </div>
+                    </div>
+                </section>
+                <section class="pick-add-ons">
+                    <h1>
+                        Pick add-ons
+                    </h1>
+                    <p>
+                        Add-ons help enhance your gaming experience.
+                    </p>
+                    <div class="extras">
+                        <label id="extras-label-0" for="online-service-input" tabindex="0">
+                            <div class="checkbox">
+                                <input id="online-service-input" type="checkbox">
+                            </div>
+                            <p class="title">
+                                Online service
+                            </p>
+                            <p class="desc">
+                                Access to multiplayer games
+                            </p>
+                            <p class="rate">
+                                +$1/mo
+                            </p>
+                        </label>
+                        <label id="extras-label-1" for="larger-storage-input" tabindex="0">
+                            <div class="checkbox">
+                                <input id="larger-storage-input" type="checkbox">
+                            </div>
+                            <p class="title">
+                                Larger storage
+                            </p>
+                            <p class="desc">
+                                Extra 1TB of cloud save
+                            </p>
+                            <p class="rate">
+                                +$2/mo
+                            </p>
+                        </label>
+                        <label id="extras-label-2" for="customizable-profile-input" tabindex="0">
+                            <div class="checkbox">
+                                <input id="customizable-profile-input" type="checkbox">
+                            </div>
+                            <p class="title">
+                                Customizable profile
+                            </p>
+                            <p class="desc">
+                                Custom theme on your profile
+                            </p>
+                            <p class="rate">
+                                +$2/mo
+                            </p>
+                        </label>
+                    </div>
+                </section>
+                <section class="finishing-up">
+                    <h1>
+                        Finishing up
+                    </h1>
+                    <p>
+                        Double-check everything looks OK before confirming.
+                    </p>
+                    <div class="details">
+                        <div>
+                            <div class="subscription">
+                                <div class="sub-info">
+                                    <div class="plan">
+                                        Arcade (Monthly)
+                                    </div>
+                                    <div class="change">
+                                        Change
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    $9/mo
+                                </div>
+                            </div>
+                            <div class="final-add-ons">
+                                
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div>
+                                Total (per year)
+                            </div>
+                            <div class="rate">
+                                $90/yr
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="thank-you-page">
+                    <div>
+    
+                    </div>
+                    <h1>
+                        Thank you!
+                    </h1>
+                    <p>
+                        Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.
+                    </p>
+                </section>
+                <footer>
+                    <div class="go-back">
+                        Go Back
+                    </div>
+                    <label for="info-submit-btn" class="next-step">
+                        Next Step
+                    </label>
+                </footer>
+            </div>
+        </main>
+    </div>
+</body>
+<script type="module" src="js/main.js">
+
+</script>
+</html>
